@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: apt-map-auto
+    env: python
+    buildCommand: ""
+    startCommand: python my_flask_map.py
+    plan: free
+    envVars:
+      - key: PORT
+        value: 5000
